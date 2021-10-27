@@ -1,0 +1,23 @@
+<div class="login">
+  <div class="card">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div>
+        <h1>Login</h1>
+        <img src="../../assets/user.png" alt="" />
+      </div>
+      <div class="inputs">
+        <label for="Nome">Nome</label>
+        <input placeholder="Email ID" formControlName="username" />
+        <label for="Senha">Senha</label>
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        />
+      </div>
+      <div class="sbt">
+        <button type="submit" class="botao">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

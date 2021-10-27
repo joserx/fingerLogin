@@ -1,0 +1,28 @@
+<div class="homep">
+  <div class="home_title">
+    <h1>Bem-vindo, {{ username }}!</h1>
+  </div>
+
+  <div class="home_users">
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Nome</td>
+          <td>Email</td>
+          <td>Cidade</td>
+          <td>Companhia</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user?.id }}</td>
+          <td>{{ user?.name }}</td>
+          <td>{{ user?.email }}</td>
+          <td>{{ user?.address?.city }}</td>
+          <td>{{ user?.company?.name }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

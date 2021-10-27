@@ -1,0 +1,8 @@
+.home_users {
+  background: white;
+  width: 900px;
+  display: flex;
+  padding: 2rem;
+  margin-left: 2rem;
+  border-radius: 12px;
+}
